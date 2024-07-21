@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Checkout SCM') {
 			steps {
-				git '/var/jenkins_home/workspace/OWASP Dependency Check/.git'
+				git url: 'https://github.com/denmire/JenkinsDependencyCheckTest.git', branch: 'master'
 			}
 		}
 
